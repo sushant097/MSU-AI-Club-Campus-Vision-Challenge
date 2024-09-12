@@ -8,16 +8,19 @@
 ### Objective:
 Participants will build an image classification model to predict the name of a university building based on a new image. The model should be trained using images of various university buildings taken from different angles and lighting conditions (not at night).
 
+### Group Formation:
+* Anyone from any deparment can team up.
+* At least 2 or at most 4 team members are allowed in each group.
+
+
 ### Timeline:
 - **Announcement & Registration:** 1 week before the competition.
 - **Starter Code Release (Officially):** Sep 16 through the email.
+- **Registration Closed:** Sep 19 Midnight.
 - **Q & A:** Will be organized if demanded. All issues should be submitted through Github Issues over the project repository.
-- **Solution Submission Deadline:** October 7 midnight. We will circulate the link to submit a solution. Only the github repo link is accepted, including detailed readme, ipynb file, model download drive link, and instructions to test your model. For example, we have a folder of images and how we can run your model to test on that. 
-- **Evaluation & Judging:** At most 7 days after submission.
+- **Solution Submission Deadline:** October 7 midnight. We will circulate the link to submit a solution. Only the github repo link is accepted, including detailed readme, ipynb file, model download drive link, and instructions to test your model. For example, we have a folder of images and how we can run your model to test on that. Also add one walkthrough video link in readme which explain the solution and demo of your code.
+- **Evaluation & Judging:** At most 7 days after submission deadline.
 - **Winners Announcement:** October 14.
-
-
-
 
 
 # Problem Statement:
@@ -114,9 +117,9 @@ print("Walker Hall")
 **You can use any resources/code available on the internet. We only evaluate overall as your logic/test scores obtained on our test dataset.**
 
 ### Judging Panel:
-- Professors and experienced AI practitioners from the Department of Computer Science.
+- Professors and experienced AI practitioners from the Department of Computer Science and Outside of MSU.
 - Potential guest judges from the industry.
-- Only results will be shown to participants. 
+- Only results will be shown to participants. We will realease winners code/github repos.
 
 ### Prizes:
 - **1st Place:** Certificate of Achievement + \$200 gift card.
