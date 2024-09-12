@@ -14,8 +14,7 @@ Participants will build an image classification model to predict the name of a u
 
 
 ### Timeline:
-- **Announcement & Registration:** 1 week before the competition.
-- **Starter Code Release (Officially):** Sep 16 through the email.
+- **Announcement & Registration:** Sep 16 through the email or AI club social media.
 - **Registration Closed:** Sep 19 Midnight.
 - **Q & A:** Will be organized if demanded. All issues should be submitted through Github Issues over the project repository.
 - **Solution Submission Deadline:** October 7 midnight. We will circulate the link to submit a solution. Only the github repo link is accepted, including detailed readme, ipynb file, model download drive link, and instructions to test your model. For example, we have a folder of images and how we can run your model to test on that. Also add one walkthrough video link in readme which explain the solution and demo of your code.
