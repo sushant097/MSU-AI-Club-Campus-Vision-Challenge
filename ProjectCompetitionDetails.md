@@ -55,7 +55,7 @@ print("Walker Hall")
 
 
 ### Dataset:
-- **Images:** You will create a set of labeled images for each building, taken from various angles, times of day, and lighting conditions to ensure diversity by yourself. Its a group effort. Every team make this dataset collectively and upload in this [Gdrive](https://drive.google.com/drive/folders/1jEZKiMNAB5PtmqZM84Q_k8D15SEvwnPE?usp=sharing). Only day time images is consider while evaluation.
+- **Images:** You will create a set of labeled images for each building, taken from various angles, times of day, and lighting conditions to ensure diversity by yourself. Its a group effort. Every team make this dataset collectively and upload in this [Gdrive](https://drive.google.com/drive/folders/1jEZKiMNAB5PtmqZM84Q_k8D15SEvwnPE?usp=sharing). Only day time images are consider while evaluation.
 - **Labels:** Label each with the corresponding building name.
 - **Test Set:** A separate test set of images that participants will not have access to during training but will be used by ourselves for final evaluation.
 
