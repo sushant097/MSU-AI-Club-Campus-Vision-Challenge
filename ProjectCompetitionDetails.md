@@ -2,10 +2,12 @@
 
 ## Campus Vision Challenge
 
-<img width="1402" alt="Screenshot 2024-09-13 at 12 53 16 PM" src="https://github.com/user-attachments/assets/35c88cc4-e6a5-49d6-a251-ae1e15b3eb97">
+<img width="1402" alt="Screenshot 2024-09-13 at 12 53 16 PM" src="https://github.com/user-attachments/assets/524a72c0-ce01-423d-b3ce-bc588de364e7">
 
 **Organized By: AI CLUB. Department of Computer Science And Engineering.**
 <!-- <img src="https://github.com/user-attachments/assets/5da125c2-20f8-40fb-865c-9e45e0f8524c" style="height: 200px, width: 200px"> -->
+
+**See Privacy Policy [here.](https://mstate-my.sharepoint.com/:w:/g/personal/sg2223_msstate_edu/EbXc0E0yVQdKrFksTGAecXIBSPFdLm1an7d35u2Vwh3irA?e=zunuFb)**
 
 
 ### Objective:
@@ -53,7 +55,7 @@ print("Walker Hall")
 
 
 ### Dataset:
-- **Images:** You will create a set of labeled images for each building, taken from various angles, times of day, and lighting conditions to ensure diversity by yourself.
+- **Images:** You will create a set of labeled images for each building, taken from various angles, times of day, and lighting conditions to ensure diversity by yourself. Its a group effort. Every team make this dataset collectively and upload in this [Gdrive](https://drive.google.com/drive/folders/1jEZKiMNAB5PtmqZM84Q_k8D15SEvwnPE?usp=sharing). Only day time images is consider while evaluation.
 - **Labels:** Label each with the corresponding building name.
 - **Test Set:** A separate test set of images that participants will not have access to during training but will be used by ourselves for final evaluation.
 
