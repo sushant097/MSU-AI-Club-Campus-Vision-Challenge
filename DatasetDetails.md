@@ -199,7 +199,8 @@ def preprocess_image(image_path):
    The model will be tested once during the final evaluation. Make sure your `README` and testing script are comprehensive.
 
 ### 6. **Where can I find more information about this challenge?**
-    Visit [here](https://github.com/sushant097/MSU-AI-Club-Campus-Vision-Challenge/blob/master/ProjectCompetitionDetails.md)
+   Visit [here](https://github.com/sushant097/MSU-AI-Club-Campus-Vision-Challenge/blob/master/ProjectCompetitionDetails.md)
+
 ---
 
 ## Dataset Summary
