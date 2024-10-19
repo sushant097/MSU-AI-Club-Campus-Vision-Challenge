@@ -301,7 +301,7 @@ for images, labels in train_loader:
 4. **Loading the Dataset (`datasets.ImageFolder`)**:
    - Loads the images and automatically assigns labels based on subfolder names.
 5. **Splitting the Dataset**:
-   - Uses an 80-20 split to create training and validation sets.
+   - Uses an 80-20 split to create training and validation sets. **I would suggest to do in advance offline and read from training and validaion directory itself.**
 6. **DataLoaders**:
    - `DataLoader` provides an easy way to iterate through the dataset in mini-batches.
    - The `batch_size` can be adjusted based on your hardware.
