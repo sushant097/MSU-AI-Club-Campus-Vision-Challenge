@@ -232,6 +232,86 @@ transform = transforms.Compose([
 ```
 ---
 
+Here's a `PyTorch` code snippet to load the resized dataset from the `CampusVisionChallengeFinal` directory, apply normalization, and prepare it for model training. The code includes detailed comments explaining each step.
+
+```python
+import os
+from torchvision import datasets, transforms
+from torch.utils.data import DataLoader
+
+# Define the path to the merged dataset
+data_dir = 'CampusVisionChallengeFinal'
+
+# Normalization values obtained from the dataset (calculated earlier)
+# Replace these values with your calculated mean and std from log.txt
+mean = [0.485, 0.456, 0.406]  # Example values, replace with actual values
+std = [0.229, 0.224, 0.225]   # Example values, replace with actual values
+
+# Define the transformation steps for the dataset
+# 1. Resize: Since images are already resized to 1024x1024, we skip this step here
+# 2. ToTensor: Converts the image to a PyTorch tensor
+# 3. Normalize: Normalizes the image using the provided mean and std values
+transform = transforms.Compose([
+    transforms.ToTensor(),                          # Convert image to PyTorch tensor
+    transforms.Normalize(mean=mean, std=std)        # Normalize using mean and std
+])
+
+# Load the dataset
+# ImageFolder expects the dataset directory to have subfolders for each class (building names)
+dataset = datasets.ImageFolder(root=data_dir, transform=transform)
+
+# Split the dataset into training and validation sets
+train_size = int(0.8 * len(dataset))  # Use 80% of the data for training
+val_size = len(dataset) - train_size  # Use the remaining 20% for validation
+train_dataset, val_dataset = torch.utils.data.random_split(dataset, [train_size, val_size])
+
+# Create DataLoaders for training and validation sets
+# Batch size is set to 32; you can adjust it based on your hardware capabilities
+batch_size = 32
+
+train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=4)
+val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=4)
+
+# Check the dataset details
+print(f'Total images in the dataset: {len(dataset)}')
+print(f'Number of training images: {len(train_dataset)}')
+print(f'Number of validation images: {len(val_dataset)}')
+
+# Example of how to iterate through the DataLoader
+# This loop fetches batches of images and labels
+for images, labels in train_loader:
+    # images: A batch of images (shape: [batch_size, 3, 1024, 1024])
+    # labels: Corresponding labels for the images
+    print(f'Batch of images shape: {images.shape}')
+    print(f'Batch of labels shape: {labels.shape}')
+    # Code to Train model
+    # ..
+    # ..
+    pass
+```
+
+### Explanation of Each Step:
+1. **Path to Dataset**:
+   - `data_dir` points to the `MergeDataset` directory containing the resized images, organized in subfolders representing each building (class).
+2. **Normalization Values**:
+   - Update `mean` and `std` with the actual values calculated in your dataset's `log.txt`.
+3. **Transformation Steps (`transforms.Compose`)**:
+   - **`ToTensor()`**: Converts PIL images to PyTorch tensors and scales pixel values to `[0, 1]`.
+   - **`Normalize()`**: Normalizes the tensor using the provided mean and std values for each RGB channel.
+4. **Loading the Dataset (`datasets.ImageFolder`)**:
+   - Loads the images and automatically assigns labels based on subfolder names.
+5. **Splitting the Dataset**:
+   - Uses an 80-20 split to create training and validation sets.
+6. **DataLoaders**:
+   - `DataLoader` provides an easy way to iterate through the dataset in mini-batches.
+   - The `batch_size` can be adjusted based on your hardware.
+   - `num_workers` is set to 4 for parallel data loading. Adjust it based on your system capabilities.
+7. **Dataset Statistics and Batch Example**:
+   - Prints the total number of images, training images, and validation images.
+   - Demonstrates how to iterate through the DataLoader to fetch batches of images and labels.
+
+
+
 ## Copyright
 This dataset is provided by the CSE AI Club. It cannot be distributed or shared without the permission of Mississippi State University and the CSE AI Club.
 
